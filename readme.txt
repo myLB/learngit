@@ -195,7 +195,8 @@
 
                 1、多人协作时，大家都会往master和dev分支上推送各自的修改
 		2、从远程库clone时，默认情况下，只能看到本地的master分支
-		3、要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：$ git checkout -b dev origin/dev
+		3、要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：$ git checkout -b dev origin/dev       
+			
 
 
 
