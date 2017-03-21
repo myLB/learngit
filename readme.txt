@@ -94,26 +94,36 @@
 
 	一、创建与合并分支
 
-		①、$ git checkout -b dev         创建dev分支
-			-b参数表示创建并切换
+		①、$ git checkout -b dev         创建并切换到dev分支
+			-b参数表示创建
 	
 		②、$ git branch                  查看当前分支
 
 
 
+		③、$ git checkout master         切换到master分支
+
+
+		④、$ git merge dev               把dev分支的工作成果合并到mster分支
+
+
+		⑤、$ git branch -d dev           删除dev分支
 
 
 
 
 
+		查看分支：git branch
 
+		创建分支：git branch <name>
 
+		切换分支：git checkout <name>
 
+		创建+切换分支：git checkout -b <name>
 
+		合并某分支到当前分支：git merge <name>
 
-
-
-
+		删除分支：git branch -d <name>
 
 
 
