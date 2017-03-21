@@ -66,31 +66,38 @@
 
 6、删除文件
 
-		$ rm 文件       删除文件
+		$ rm 文件名                     删除文件
+		$ git rm 文件名			从版本库中删除该文件
 
 
 
 
+7、远程仓库
+
+				（远程仓库名）
+		$ git remote add origin git@github.com:myLB/文件名.git
+
+		$ git push -u origin master      把本地库的所有内容推送到远程库上
+
+		$ git push origin master -f      强行让本地分支覆盖远程分支
+
+		$ git pull origin master         抓取并合并远程仓库全部内容
+
+
+		$ git clone git@github.com:myLB/文件名.git
+
+		从远程库中clone一份到本地
 
 
 
+8、分支管理
 
+	一、创建与合并分支
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		①、$ git checkout -b dev         创建dev分支
+			-b参数表示创建并切换
+	
+		②、$ git branch                  查看当前分支
 
 
 
