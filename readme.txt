@@ -261,9 +261,9 @@
 
 
 
+11、配置别名
 
-
-
+	$ git config --global alias.st status      st是status的别名 以后st=status
 
 
 
