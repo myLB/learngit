@@ -198,11 +198,11 @@
 		3、要在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：$ git checkout -b dev origin/dev       
 			
 
+			远程的origin必须有dev分支，否则报错
+	
 
 
-
-
-
+		是否更新
 
 
 
