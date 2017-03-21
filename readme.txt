@@ -132,9 +132,12 @@
 		按住shift键盘在加wq    退出并保存内容
 
 
-
-
-		mistake
-
+	二、分支管理策略
+	
+		①、$ git merge --no-ff -m "merge with no-ff" dev   用这种方式可以保留分支里的内容
+			--no-ff参数，表示禁用Fast forward
+			加上-m参数，把commit描述写进去
+		
+		合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并
 
 
