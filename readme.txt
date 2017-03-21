@@ -82,8 +82,8 @@
 		$ git push origin master -f      强行让本地分支覆盖远程分支
 
 		$ git pull origin master         抓取并合并远程仓库全部内容
-
-
+       ($ git fetch origin <name> 这个更安全些,可以查看更新情况，然后再决定是否合并)
+		
 		$ git clone git@github.com:myLB/文件名.git
 
 		从远程库中clone一份到本地
