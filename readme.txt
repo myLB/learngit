@@ -127,9 +127,9 @@
 
 
 
-	miss is array take
+		vi 文件名   编辑文档内容
 
-
+		按住shift键盘在加wq    退出并保存内容
 
 
 
