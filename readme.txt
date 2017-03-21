@@ -150,18 +150,18 @@
             首先确定要在哪个分支上修复bug，假定需要在master分支上修复，就从master创建临时分支
 
 
+		②、$ git stash list       查看刚才的工作现场存到哪去了
 
 
+	  	③、$ git stash apply      恢复后，stash内容并不删除(恢复所有的)
+
+		④、$ git stash pop        恢复的同时把stash内容也删了(恢复并删除所有的)
+
+		⑤、$ git stash drop       删除stash内容(删除所有的)
 
 
-
-
-
-
-
-
-
-
+		⑥、$ git stash apply stash@{0}   恢复列表下标为0的内容
+ 
 
 
 
