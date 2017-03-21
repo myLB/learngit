@@ -1,6 +1,7 @@
 1、每个机器都必须自报家门：你的名字和Email地址
 	$ git config --global user.name "Your Name"
 	$ git config --global user.email "email@example.com"
+        $ git config --global color.ui true       让Git显示颜色，会让命令输出看起来更醒目
 
 2、创建仓库
 	$ mkdir learngit        建立仓库文件夹
@@ -210,6 +211,58 @@
 	   4.没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
 
 	   如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name
+
+
+
+9、标签管理
+
+	一、创建标签
+
+		$ git tag <tagname>    创建标签   这个是给最新版本添加标签（tagname为标签名，如：v1.0）
+
+    		$ git tag <tagname> commit_id     这个是给历史版本添加标签
+
+		$ git tag                      查看标签
+
+		$ git show <tagname>           查看标签信息
+   
+		$ git tag -a <tagname> -m "version 0.1 released" commit_id
+			创建带有说明的标签，用-a指定标签名，-m指定说明文字
+
+		$ git tag -s <tagname> -m "version 0.1 released" commit_id
+			通过-s用私钥签名一个标签
+			签名采用PGP签名，因此，必须首先安装gpg（GnuPG），如果没有找到gpg，或者没有gpg密钥对，就会报错，git show <tagname>可以看到PGP签名信息
+	
+
+	
+	二、操作标签
+
+		$ git tag -d <tagname>         删除标签           
+		因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除
+
+		$ git push origin <tagname>    推送某个标签到远程
+	
+		$ git push origin --tags       一次性推送全部尚未推送到远程的本地签
+
+		$ git push origin :refs/tags/<tagname>    删除一个远程标签
+		
+
+
+
+10、使用github
+
+	·在GitHub上，可以任意Fork开源仓库
+
+	·自己拥有Fork后的仓库的读写权限；
+
+	·可以推送pull request给官方仓库来贡献代码。
+
+
+
+
+
+
+
 
 
 
