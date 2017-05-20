@@ -10,6 +10,7 @@
 	$ git init              把这个目录变成Git可以管理的仓库
 	先touch readme.txt
 	在$ git add readme.txt          告诉Git，把文件添加到仓库
+	git add -A      添加所有到仓库
 	$ git commit -m "这里是注释"    告诉Git，把文件提交到仓库
 
 	$ git status   	        让我们时刻掌握仓库当前的状态，查看哪些只是修改过,但还没有提交
@@ -264,8 +265,6 @@
 11、配置别名
 
 	$ git config --global alias.st status      st是status的别名 以后st=status
-
-
 
 
 
